@@ -1,0 +1,5 @@
+env
+*csv
+notebooks
+__pycache__
+.pytest_cache

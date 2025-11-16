@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: psprompter
+Version: 0.0.1
+Summary: This is a library created to improve prompting
+Author-email: PS - Adrian Bayona <adrian.b@thepolysight.com>
+Requires-Python: >=3.14.0
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic
+
+To get started, set your OPENAI_API_KEY environment variable, or other required keys for the providers you selected.
+
+Next, edit promptfooconfig.yaml.
+
+Then run:
+```
+promptfoo eval
+```
+
+Afterwards, you can view the results by running `promptfoo view`

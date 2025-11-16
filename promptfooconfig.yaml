@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+# Learn more about building a configuration: https://promptfoo.dev/docs/configuration/guide
+
+description: "psprompter"
+
+prompts:
+  - file://prompts/long_summary.md
+  
+
+providers:
+  - "ollama:chat:phi4-mini"
+  - "ollama:chat:llama3.2"
+  
+tests:
+  - vars:
+      text: file://promptfoo_vars/text.txt
+
+    assert:
+
+      - type: icontains
+        value: On November
