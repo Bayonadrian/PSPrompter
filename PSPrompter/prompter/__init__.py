@@ -20,7 +20,7 @@ class PromptCollector:
 
         for _ in self.prompt.prompt_vars:
 
-            prompt = re.sub(rf'{{{{{_.name}}}}}', _.value, prompt, count= 0)
+            prompt = prompt.replace(f"{{{{{_.name}}}}}", _.value)
 
         return prompt
 
